@@ -1,0 +1,84 @@
+.introducao {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  align-items: center;
+}
+
+.introducao h1 {
+  font-size: 3rem;
+  line-height: 1.125;
+  margin-bottom: 30px;
+  font-family: "Source Code Pro", Arial, Helvetica, sans-serif;
+  position: relative;
+}
+
+.introducao-ponto {
+  display: flex;
+  gap: 10px;
+}
+
+.introducao p {
+  font-size: 1.5rem;
+  color: #525252;
+}
+
+@media (max-width: 1000px) {
+  .introducao h1 {
+    font-size: 1.7rem;
+  }
+
+  .introducao p {
+    font-size: 1rem;
+  }
+
+  .ponto {
+    width: 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .introducao {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  .introducao h1 {
+    font-size: 1.45rem;
+  }
+
+  .introducao img {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 500px) {
+  .introducao {
+    grid-template-columns: 1fr;
+    margin-left: 30px;
+    /* display: flex;
+    align-content: center;
+    justify-content: center; */
+    padding: 20px;
+  }
+  .introducao img {
+    display: none;
+  }
+  .ponto {
+    width: 10px;
+    left: 0px;
+  }
+
+  .introducao h1::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 100%;
+    background: url("../img/Rectangleredondo.svg") no-repeat center;
+    position: absolute;
+    top: 0px;
+    left: -30px;
+  }
+}
