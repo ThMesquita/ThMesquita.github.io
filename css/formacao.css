@@ -58,6 +58,10 @@
   justify-content: space-between;
 }
 
+.separacao-colunas img {
+  max-width: 80px;
+}
+
 .faculdade-tipo {
   font-size: 0.875rem;
   font-family: "Source Code Pro", Arial, Helvetica, sans-serif;
@@ -136,12 +140,6 @@
 .cursos li {
   display: flex;
   justify-content: space-between;
-}
-
-@media (max-width: 1000px) {
-  .separacao-colunas img {
-    max-width: 80px;
-  }
 }
 
 @media (max-width: 800px) {
