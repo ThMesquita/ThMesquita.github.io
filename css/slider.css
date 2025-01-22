@@ -1,0 +1,128 @@
+.slider-container{
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+}
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.slider-container .subtitulo {
+  max-width: 5ch;
+  margin-top: 80px;
+  color: #767676;
+}
+
+.slide {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 1100px;
+  padding: 40px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 80px;
+  margin-top: 40px;
+  gap: 40px;
+}
+
+.slide-title {
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.slide-paragraph {
+  font-size: 1rem;
+}
+
+.prev, .next {
+  background: linear-gradient(to right, #a20012, #fa304b);
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media (max-width: 1200px) {
+  .prev, .next {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+  .slide-title {
+    font-size: 2.6rem;
+  }
+  
+  .slide-paragraph {
+    font-size: .8rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .slide{
+    width: 500px;
+    flex-direction: column;
+    text-align: center;
+  }
+  .slide-title {
+    font-size: 2rem;
+  }
+  
+  .slide-paragraph {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .slide {
+    gap: 0px;
+    padding: 20px;
+    margin-bottom: 0px;
+  }
+  .slide-title {
+    margin-bottom: 0;
+  }
+  .slider{
+    gap: 10px;
+  }
+  .slide-title {
+    font-size: 1.2rem;
+  }
+  
+  .slide-paragraph {
+    display: none;
+  }
+
+  .slider-container .subtitulo {
+    margin-top: 0px ;
+  }
+}
+
+.slide:hover{
+  text-decoration: none;
+}
+
+.slide-img{
+  max-width: 900px;
+  height: 100%;
+  border: 3px solid #000;
+  border-image: linear-gradient(#a20012, #fa304b) 1;
+}
+
+.slide-description {
+  padding: 8px; /* Ajusta o espaçamento do texto */
+}
+
